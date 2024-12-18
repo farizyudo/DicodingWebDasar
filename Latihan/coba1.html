@@ -20,19 +20,67 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <h1>Navbar</h1>
+            <ol>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="coba1.html">Halaman Coba Coba</a></li>
+                <li><a href="materi.html">Materi</a></li>
+            </ol>
+        </nav>
+    </header>
 
-    <h1>Ceritanya Navbar</h1>
+    <ul>
+
+        <li><a href="#form">Mengirim Data</a></li>
+        <li><a href="#footer">Footer</a></li>
+    </ul>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt pariatur cumque asperiores
         consequatur qui iure consequuntur quod eligendi, aliquam quisquam praesentium cupiditate eius dolor sit amet
         placeat iste nemo?</p>
-    <ol>
-        <li><a href="index.html">Index</a></li>
-        <li><a href="coba1.html">Halaman Coba Coba</a></li>
-        <li><a href="materi.html">Materi</a></li>
-
-    </ol>
-
     <nama-elemen style="color: green">Konten elemen HTML</nama-elemen>
+
+    <h1 id="form">Mengirim data</h1>
+    <form>
+        <div>
+            <label for="email">Email</label>
+            <br />
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <br />
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        <div>
+            <label for="fullName">Nama</label>
+            <input id="fullName" name="fullName" required>
+        </div>
+        <br>
+        <div>
+            <label for="checkIn">Tanggal Check-In</label>
+            <input type="date" id="checkIn" name="checkIn" required>
+        </div>
+        <br>
+        <div>
+            <label for="checkOut">Tanggal Check-Out</label>
+            <input type="date" id="checkOut" name="checkOut" required>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <footer id="footer">
+        <p>Hubungi kami di</p>
+        <ul>
+            <li><a href="https://example.com">Website</a></li>
+            <li><a href="mailto:info@example.com">Email</a></li>
+            <li><a href="tel:+62123456">Telepon</a></li>
+            <li><a href="#address">Alamat</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>

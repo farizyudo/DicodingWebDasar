@@ -7,32 +7,29 @@
 </head>
 
 <body>
-    <h1>Ceritanya Navbar</h1>
-    <ol>
-        <li><a href="index.html">Index</a></li>
-        <li><a href="coba1.html">Halaman Coba Coba</a></li>
-        <li><a href="materi.html">Materi</a></li>
-    </ol>
+    <header>
+        <nav>
+            <h1>Navbar</h1>
+            <ol>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="coba1.html">Halaman Coba Coba</a></li>
+                <li><a href="materi.html">Materi</a></li>
+            </ol>
+        </nav>
+    </header>
 
     <h1>Materi</h1>
     <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Layout Resposif Dengan Flexbox</li>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#flexbox">Layout Resposif Dengan Flexbox</a></li>
+        <li><a href="#footer">Footer</a></li>
     </ul>
     <!-- HTML -->
-    <h2>HTML</h2>
-    <h3>Pengantar HTML</h3>
-    <h3>Pendalaman HTML</h3>
+    <h2 id="html">HTML</h2>
+    <h3>A. Pengantar HTML</h3>
+    <h3>B. Pendalaman HTML</h3>
     <ol>
-        <li>
-            <h4>Rangkuman Pendalaman HTML</h4>
-            <p>
-                Kita telah belajar banyak hal dalam modul Pendalaman HTML. Kami siapkan rangkuman materi terhadap hal
-                yang telah
-                Anda pelajari selama ini. Harapannya, Anda dapat mengingat kembali setiap materi yang disampaikan.
-            </p>
-        </li>
         <li>
             <h4>Paragraf</h4>
             <p>
@@ -61,108 +58,229 @@
                 &lt;/ol&gt;
             </p>
         </li>
+
         <li>
             <h4>Gambar</h4>
             <p>pake img aja udh</p>
         </li>
         <li>
-            <h4>Inline Formatting Text: Long Quotations, Preformatted Text, dan Figure</h4>
-            <p>1. Long Quotations = tags &lt;blockquote&gt; &lt;/blockquote&gt;</p>
-            <p>Preformatted Text
-                HTML akan mengabaikan spasi yang dituliskan secara berulang dan juga line breaks (garis baru). Namun,
-                pada beberapa tipe konten, seperti contoh kode atau puisi hal tersebut sangat berarti. Ada sebuah elemen
-                yang dapat kita gunakan untuk menampilkan konten sesuai yang kita tulis pada text editor. Untuk
-                menggunakannya, kita gunakan elemen
-                &lt;pre&gt; sebagai pembungkus kontennya. <br>
-                contoh : <br>
+            <h4>Block Formatting Text: Long Quotations, Preformatted Text, dan Figure</h4>
+            <p>Sejauh ini, kita sudah mengenal paragraf, heading, dan juga list pada HTML. Tapi masih ada beberapa lagi
+                yang merupakan spesial teks format yang dapat kita gunakan yaitu
+                blockquote,
+                pre, dan figure.
+            </p>
+            <h4>Long Quotations : Kutipan</h4>
+            <p>Jika pada konten kita memiliki sebuah kutipan ataupun sebuah testimonial, kita dapat gunakan format long
+                quotations dengan menggunakan tags blockquote. Konten dalam elemen blockquote dapat berupa sebuah
+                paragraf, heading, ataupun list. Pada elemen ini, kita dapat menggunakan atribut cite untuk menentukan
+                sumber URL dari sebuah kutipan (jika kutipan tersebut bersumber dari sebuah situs website). Namun, tidak
+                ada tampilan yang berbeda pada browser secara kasat mata.
+                <br> contoh : <br>
+            <blockquote cite="https://id.wikipedia.org/wiki/Situs_web">
+                <p>
+                    Situs web (bahasa Inggris: website) adalah sekumpulan halaman web yang saling berhubungan yang
+                    umumnya berada pada peladen yang sama berisikan kumpulan informasi yang disediakan secara
+                    perorangan, kelompok, atau organisasi.
+                </p>
+            </blockquote>
+            </p>
+            <h4>Preformatted Text : Puisi</h4>
+            <p>
+                Contoh : <br>
             <pre>
-                SAJAK PUTIH
-                 
-                Bersandar pada tari warna pelangi
-                Kau depanku bertudung sutra senja
-                Di hitam matamu kembang mawar dan melati
-                Harum rambutmu mengalun bergelut senda
-                 
-                Sepi menyanyi, malam dalam mendoa tiba
-                Meriak muka air kolam jiwa
-                Dan dalam dadaku memerdu lagu
-                Menarik menari seluruh aku
-                 
-                Hidup dari hidupku, pintu terbuka
-                Selama matamu bagiku menengadah
-                Selama kau darah mengalir dari luka
-                Antara kita Mati datang tidak membelah...
-                 
-                Karya: Chairil Anwar
-                </pre>
+                    SAJAK PUTIH
+                  
+                  Bersandar pada tari warna pelangi
+                  Kau depanku bertudung sutra senja
+                  Di hitam matamu kembang mawar dan melati
+                  Harum rambutmu mengalun bergelut senda
+                  
+                  Sepi menyanyi, malam dalam mendoa tiba
+                  Meriak muka air kolam jiwa
+                  Dan dalam dadaku memerdu lagu
+                  Menarik menari seluruh aku
+                  
+                  Hidup dari hidupku, pintu terbuka
+                  Selama matamu bagiku menengadah
+                  Selama kau darah mengalir dari luka
+                  Antara kita Mati datang tidak membelah...
+                  
+                                    Karya: Chairil Anwar
+            </pre>
             </p>
-            <p>Figure : <br>
+            <h4>Figure</h4>
+            <p>
                 Elemen
-                &lt;figure&gt; digunakan untuk mempresentasikan konten tersendiri (self-contained content), seperti
-                ilustrasi,
-                diagram, foto, atau bisa juga sebuah baris kode. Dalam elemen figure, kita dapat menuliskan elemen
-                "figcaption" sebagai sebuah caption (judul) untuk konten tersebut.
+                "figure" digunakan untuk mempresentasikan konten tersendiri (self-contained content), seperti ilustrasi,
+                diagram, foto, atau bisa juga sebuah baris kode. Banyak hal yang dapat digunakan dalam elemen ini.
             </p>
+            <p>
+                Contoh : <br>
+                Dicoding adalah sebuah perusahaan startup yang bertujuan mengembangkan ekosistem developer di
+                Indonesia. Berdiri sejak 5 Januari 2015, Dicoding memiliki platform pembelajaran elektronik di
+                laman Dicoding.com.
+            </p>
+
+            <figure>
+                <img src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/g-dicoding-logo.png"
+                    alt="g Dicoding Logo" width="200px" />
+                <figcaption>Dicoding</figcaption>
+            </figure>
+
+            <p>
+                Materi perdana yang menjadi magnet dari awal berdirinya Dicoding hingga kini adalah kelas Menjadi
+                Android Developer Expert. Kelas ini dikembangkan oleh Google Developer Expert in Android, Sidiq
+                Permana dan Head of Dicoding Academy, Ahmad Imaduddin. Seperti halnya kelas Picodiploma lain,
+                modul online-nya juga hadir dalam bentuk buku berjudul sama yang telah mendapatkan ijin dan ISBN.
+            </p>
+
         </li>
         <li>
             <h4>Inline Formatting Text: Anchor, Emphasized Text, Important Text, dan Short Quotation</h4>
-            <p>1. Anchor</p>
-            <p>2. Emphasized Text
+            <h4>1. Anchor : Hyperlink</h4>
+            <p>Contoh : <br>
+                Hubungi kami di
+            <ul>
+                <li><a href="https://example.com">Website</a></li>
+                <li><a href="mailto:info@example.com">Email</a></li>
+                <li><a href="tel:+62123456">Telepon</a></li>
+                <li><a href="#address">Alamat</a></li>
+            </ul>
+            </p>
+            <h4>2. Emphasized Text : Garis Miring</h4>
+            <p>
                 Gunakan elemen "em" untuk menunjukkan bagian kata yang perlu kita tekankan. Elemen ini menunjukkan
                 stress emphasis atau konten/kata yang perlu mendapatkan penekanan atau perhatian khusus.
             </p>
+            <p>Contoh : <br>
+                <em>Oding</em> adalah seorang pelajar <br>
+                Dia adalah seorang <em>pelajar</em>
+            </p>
+            <h4>3. Important Text : Bold / Tebal</h4>
             <p>
-                3. Important Text
-                Gunakan elemen "strong" untuk menunjukkan sebuah teks yang begitu penting (strong importance), serius
-                ataupun mendesak. Artinya, teks tersebut harus dapat perhatian lebih dari teks biasa lainnya.
-                <br>
                 contoh : <br>
                 Kesehatan merupakan hal yang penting, jaga pola makan yang teratur dan <strong>jangan sampai makan
                     tengah malam!</strong>
             </p>
+            <h4>4. Short Quotations : Petik dua "kek gini"</h4>
             <p>
-                4. Short Quotations
-                Gunakan elemen "q" untuk menandai sebuah kutipan dalam sebuah teks. Elemen ini berbeda dengan
-                "blockquote". Elemen ini digunakan untuk kutipan pendek yang terletak di dalam baris (inline).
                 <br>
                 contoh : <br>
                 Sebelum pulang kerja, ia berkata kepadaku: <q>Maaf saya tidak bisa hadir dalam pertemuan nanti</q>
             </p>
+            <p>
+                contoh 2 : <br>
+                Dilansir dari website Mozilla, <q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox
+                    1.0 diluncurkan
+                    pada 2004 dan menjadi produk yang sukses.</q>
+            </p>
         </li>
+        <!--  -->
         <li>
             <h4>Inline Formatting Text: Citation, Defining Terms, Subscript, Superscript, Highlighted Text, dan Line
                 Break</h4>
-            <p>Citation</p>
-            <p>Defining Terms</p>
-            <p>Subscript dan Superscript</p>
-            <p>Highlighted Text</p>
-            <p>Line Break</p>
+            <ol type="i">
+                <li>
+                    <h4>Citation : Sama kek hyperlink</h4>
+                    <p>
+                        Contoh : <br>Informasi selengkapnya bisa Anda dapatkan di <cite><a
+                                href="https://dicoding.com">dicoding.com</a></cite>.
+                    </p>
+                </li>
+                <li>
+                    <h4>Defining Terms : Italic</h4>
+                    <p>
+                        contoh : <br>
+                    <p><dfn>Website</dfn> merupakan halaman yang menampilkan informasi melalui teks atau gambar. Website
+                        dapat diakses melalui internet dengan menggunakan browser.</p>
+                    </p>
+                </li>
+                <li>
+                    <h4>Subscript dan Superscript : Texk kecil / besar diatas atau dibawah</h4>
+                    <p>contoh : <br>
+                        Sukrosa merupakan suatu disakarida yang dibentuk dari monomer-monomernya yang berupa unit
+                        glukosa dan fruktosa, dengan rumus molekul C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>. <br>
+                        Salah satu persamaan paling umum dalam semua fisika adalah E=MC<sup>2</sup>
+
+                    </p>
+                </li>
+                <li>
+                    <h4>Highlighted Text : Stabilo / pewarnaan text</h4>
+                    <p>
+                        contoh : <br>
+                        Ini adalah periode perang saudara. Pesawat ruang angkasa pemberontak, menyerang dari pangkalan
+                        tersembunyi, telah memenangkan kemenangan pertama mereka melawan Kekaisaran Galactic yang jahat.
+                        Selama pertempuran,
+                        <mark>mata-mata Pemberontak berhasil mencuri rencana rahasia </mark>
+                        ke senjata pamungkas Kekaisaran, STAR DEATH, stasiun ruang angkasa berlapis baja dengan kekuatan
+                        yang cukup untuk menghancurkan seluruh planet.
+                    </p>
+                </li>
+                <li>
+                    <h4>Line Break : Memberi spasi menggunakan br</h4>
+                    <p>
+                        Dicoding Space,<br>
+                        Jln. Batik Kumeli No. 50.<br>
+                        Bandung.<br>
+                        40123
+                    </p>
+                </li>
+            </ol>
         </li>
         <li>
             <h4>Semantic HTML: Mengorganisasikan Halaman Konten</h4>
             <p>
-                Website memiliki hierarki konten yang sama seperti dokumen sehari-hari yang kita baca, majalah, dan
-                koran
-                contohnya. Jadi, hierarki pada sebuah website merupakan hal yang penting. Tentu elemen yang terdapat
-                pada
-                HTML perlu kita kelompokkan menjadi beberapa bagian.
+                Menggunakan div / (header, nav), (main, div content, article, aside/sidebar), footer
             </p>
+            <h4>Header : Bagian atas website</h4>
+            <h4>Nav : Navigation bar</h4>
+            <h4>Main : Isi Konten</h4>
+            <h4>Footer : Penutup website</h4>
+            <h4>article : container independn untuk konten</h4>
+            <p>Contoh : </p>
+            <article>
+                <h2>Sejarah</h2>
+                <img src="assets/image/history.jpg">
+                <p>Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya sungai Citarum oleh lava
+                    Gunung Tangkuban Parahu yang lalu membentuk telaga...</p>
+            </article>
         </li>
         <li>
-            <h4>Semantic HTML: Header, Footer, Main, dan Nav</h4>
-            <p></p>
         </li>
     </ol>
 
 
     <!-- CSS -->
-    <h2>CSS</h2>
-    <h3>Pengenalan CSS</h3>
-    <h3>Pendalaman CSS</h3>
+    <h2 id="css">CSS</h2>
+    <ol type="A">
+        <li>
+            <h3>Pengenalan CSS</h3>
+        </li>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio molestiae quo, corporis voluptas iure
+            fugit quam maiores, omnis consectetur quibusdam odio cumque assumenda cupiditate nisi officia magnam beatae
+            libero dolores.</p>
+        <li>
+            <h3>Pendalaman CSS</h3>
+        </li>
+    </ol>
+
+
 
     <!-- Flexbox -->
-    <h2>Layout Resposif Dengan Flexbox</h2>
+    <h2 id="flexbox">Layout Resposif Dengan Flexbox</h2>
 
+
+    <footer id="footer">
+        <p>Hubungi kami di</p>
+        <ul>
+            <li><a href="https://example.com">Website</a></li>
+            <li><a href="mailto:info@example.com">Email</a></li>
+            <li><a href="tel:+62123456">Telepon</a></li>
+            <li><a href="#address">Alamat</a></li>
+        </ul>
+        &copy; 2019, Dicoding Academy
+    </footer>
 </body>
 
 </html>
