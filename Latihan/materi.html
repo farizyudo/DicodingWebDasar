@@ -289,6 +289,408 @@
                 <span class="bahan">gula</span> dan <span class="bahan">garam</span>.
             </p>
         </li>
+        <li>
+            <h4>Tabel</h4>
+            <table>
+                <tr>
+                    <th>th</th>
+                    <th>tr</th>
+                    <th>td</th>
+                </tr>
+                <tr>
+                    <td>tabel row</td>
+                    <td>tabel header</td>
+                    <td>tabel data</td>
+                </tr>
+            </table>
+            <h4>Spanning Cell : merge / gabung cell</h4>
+            <p>colspan = Column Spans : merge kolom</p>
+            <p>Row Spans : merge baris</p>
+            <h4>Border : menambah border</h4>
+            <p>contoh Column Spans : merge kolom</p>
+            <table border="1">
+                <tr>
+                    <th>18:00</th>
+                    <th>19:00</th>
+                    <th>20:00</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Avenger Infinity Wars</td>
+                    <td>It Chapter 2</td>
+                </tr>
+                <tr>
+                    <td>One Piece: Stampede</td>
+                    <td>Weathering With You</td>
+                    <td>Gundala</td>
+                </tr>
+                <tr>
+                    <td>Gundala</td>
+                    <td colspan="2">Avenger Infinity Wars</td>
+                </tr>
+            </table>
+            <p>contoh : rowspan</p>
+            <table border="1">
+                <tr>
+                    <th rowspan="3">18:00</th>
+                    <td>Avenger Infinity Wars</td>
+                </tr>
+                <tr>
+                    <td>One Piece: Stampede</td>
+                </tr>
+                <tr>
+                    <td>Gundala</td>
+                </tr>
+            </table>
+            <p>Coba rowspan + colspan</p>
+            <table border="1">
+                <tr>
+                    <td>baris 1 kolom 1</td>
+                    <td>baris 1 kolom 2</td>
+                    <td>baris 1 kolom 3</td>
+                    <td>baris 1 kolom 3</td>
+                </tr>
+                <tr>
+                    <td>baris 1 kolom 2</td>
+                    <td colspan="2" rowspan="2">baris 1 kolom 2</td>
+                    <td>baris 1 kolom 2</td>
+                </tr>
+                <tr>
+                    <td>baris 1 kolom 2</td>
+                    <td>baris 1 kolom 2</td>
+                </tr>
+                <tr>
+                    <td>baris 1 kolom 2</td>
+                    <td>baris 1 kolom 2</td>
+                    <td>baris 1 kolom 2</td>
+                    <td>baris 1 kolom 2</td>
+                </tr>
+            </table>
+
+            <h4>Elemen dan Atribut pada Tabel</h4>
+            <!-- Catatan -->
+            <table class="table table-responsive" style="width:98%;" border="1">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="text-align:center;background-color:rgb(204,204,204);">
+                            <p><strong>Elemen dan Atribut</strong></p>
+                        </td>
+                        <td style="text-align:center;background-color:rgb(204,204,204);">
+                            <p><strong>Deskripsi</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>table</p>
+                        </td>
+                        <td>
+                            <p>Menetapkan elemen tabel.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>td</p>
+                        </td>
+                        <td>
+                            <p>Menetapkan sebuah sel dalam baris tabel.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:4.9178%;"><br></td>
+                        <td style="width:26.1933%;">
+                            <p>colspan=”number”</p>
+                        </td>
+                        <td>
+                            <p>Jumlah kolom yang dicakup oleh sel.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:4.9178%;"><br></td>
+                        <td style="width:26.1933%;">
+                            <p>rowspan=”number”</p>
+                        </td>
+                        <td>
+                            <p>Jumlah baris yang dicakup oleh sel.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:4.9178%;"><br></td>
+                        <td style="width:26.1933%;">
+                            <p>headers=”nama header”</p>
+                        </td>
+                        <td>
+                            <p>Mengasosiasikan data sel dengan&nbsp;header.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>th</p>
+                        </td>
+                        <td>
+                            <p>Menetapkan header yang terkait dengan baris atau kolom.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:4.9178%;"><br></td>
+                        <td style="width:26.1933%;">
+                            <p>colspan=”number”</p>
+                        </td>
+                        <td>
+                            <p>Jumlah kolom dicakup oleh&nbsp;header.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:4.9178%;"><br></td>
+                        <td style="width:26.1933%;">
+                            <p>rowspan=”number”</p>
+                        </td>
+                        <td>
+                            <p>Jumlah row yang dicakup oleh header.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:4.9178%;"><br></td>
+                        <td style="width:26.1933%;">
+                            <p>headers=”nama header”</p>
+                        </td>
+                        <td>
+                            <p>Mengasosiasikan&nbsp;header&nbsp;dengan&nbsp;header&nbsp;lain.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:4.9178%;"><br></td>
+                        <td style="width:26.1933%;">
+                            <p>scope=”row|col|rowgroup|colgroup”</p>
+                        </td>
+                        <td>
+                            <p>Mengasosiasikan&nbsp;header&nbsp;dengan baris, kelompok baris, kolom, atau
+                                kelompok kolom.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>tr</p>
+                        </td>
+                        <td>
+                            <p>Menetapkan sebuah baris pada tabel.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>caption</p>
+                        </td>
+                        <td>
+                            <p>Memberikan judul pada sebuah tabel.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>col</p>
+                        </td>
+                        <td>
+                            <p>Menetapkan sebuah kolom.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>colgroup</p>
+                        </td>
+                        <td>
+                            <p>Menetapkan sebuah kelompok kolom.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>tbody</p>
+                        </td>
+                        <td>
+                            <p>Mengidentifikasi sebuah body dalam tabel.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>tfoot</p>
+                        </td>
+                        <td>
+                            <p>Mengidentifikasi sebuah footer dalam tabel.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>thead</p>
+                        </td>
+                        <td>
+                            <p>Mengidentifikasi sebuah header dalam tabel.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+        <li>
+            <h4>Input User</h4>
+            <p>contoh :</p>
+            <div>
+                Text:
+                <input type="text" />
+            </div>
+            <div>
+                Number:
+                <input type="number" />
+            </div>
+            <div>
+                Email:
+                <input type="email" />
+            </div>
+            <div>
+                Password:
+                <input type="password" />
+            </div>
+        </li>
+
+        <p>catatan :</p>
+        <table cellspacing="0">
+            <tbody>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p><strong>Tipe</strong></p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p><strong>Deskripsi</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="text"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Input teks yang berisi satu baris. Ini adalah tipe default dari input elemen. Jika tidak
+                            menentukan tipenya, tipe <strong>text</strong>-lah yang akan diterapkan.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="number"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Input teks yang hanya mengizinkan format angka.&nbsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="password"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Sama seperti input text, tetapi setiap karakter akan ditampilkan sebagai bintang.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="email"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Sama seperti teks biasa, tetapi input ini dikhususkan untuk format email. Jika tidak, error
+                            akan muncul.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="search"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Input untuk melakukan pencarian berdasarkan kata kunci. Input ini memiliki ikon ✕ di tepi
+                            kanan elemen untuk melakukan clear text.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="date"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Untuk mengambil data tanggal. Tipe ini akan menyediakan popup penanggalan untuk mempermudah
+                            pengisian.&nbsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="time"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Menentukan waktu (jam) yang ingin user isi. Tipe input ini juga akan menampilkan visual dari
+                            jam.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="datetime-local"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Sama seperti tipe date, tetapi ia menambahkan data waktu (jam).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="checkbox"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Di-render sebagai sebuah kotak yang dapat dicek untuk active.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="radio"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Pada umumnya, ini digunakan untuk melakukan pemilihan dari sekian opsi (radio button) yang
+                            ada. Untuk melakukannya, input ini akan dikelompokkan dalam sebuah radio group. Bukan
+                            merupakan suatu elemen, kita dapat memberikan value yang sama pada atribut name di setiap
+                            elemen radio.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="range"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Menentukan nilai angka berdasarkan jangkauan nilai yang ditentukan. User tidak akan bisa
+                            mengambil nilai diluar yang ditentukan.&nbsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="color"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>User dapat menentukan warna dengan tipe ini, baik menggunakan color picker atau memasukkan
+                            format nilai warna secara manual.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="file"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Melakukan input satu atau lebih berkas dari penyimpanan data perangkatnya.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="submit"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Input yang di-render sebagai tombol submit. Jika tombol ini ditekan, formulir akan ter-submit
+                            dan dikirimkan ke tujuan pengiriman (atribut action).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:19.4589%;">
+                        <p>&lt;input type="hidden"&gt;</p>
+                    </td>
+                    <td style="width:80.3376%;">
+                        <p>Biasanya, tipe ini tidak terlihat oleh user. Namun, input ini akan sangat berguna bagi
+                            developer untuk memasukkan suatu data.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </ol>
 
 
